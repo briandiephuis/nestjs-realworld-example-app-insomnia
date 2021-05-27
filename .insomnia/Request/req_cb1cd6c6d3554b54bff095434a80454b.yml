@@ -1,0 +1,30 @@
+_id: req_cb1cd6c6d3554b54bff095434a80454b
+type: Request
+parentId: wrk_e7b09c405e0c4735b0dab47b228c930c
+modified: 1622143492229
+created: 1621871718971
+url: "{{ _.host }}{{ _.gql }}"
+name: Me
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"query me {\n  me
+    {\n    id\n    username\n    image\n    bio\n    articles
+    {\n      id\n      title\n      description\n    }\n  }\n}\n","operationName":"me"}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_bc5d6fb6fe114e319bd00e9065befa3d',
+    'b64::JC5qd3Q=::46b', 'when-expired', 600 %}"
+metaSortKey: -1621868628152
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,16 @@
+_id: env_5c874b3af515c9272de8d94195ffc3f135a41d7e
+type: Environment
+parentId: wrk_e7b09c405e0c4735b0dab47b228c930c
+modified: 1621868615821
+created: 1621868557855
+name: Base Environment
+data:
+  auth: /auth
+  gql: /graphql
+dataPropertyOrder:
+  "&":
+    - auth
+    - gql
+color: null
+isPrivate: false
+metaSortKey: 1621868557855

@@ -1,0 +1,27 @@
+_id: req_d365811fb62249e9a918838530b4162c
+type: Request
+parentId: wrk_e7b09c405e0c4735b0dab47b228c930c
+modified: 1622141901803
+created: 1621870862540
+url: "{{ _.host }}{{ _.gql }}"
+name: Create User
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"mutation createUser($input: CreateUserInput!)
+    {\n  createUser(input: $input)
+    {\n    id\n  }\n}","variables":{"input":{"email":"d.duck@example.com","password":"daisy01","username":"Donald"}},"operationName":"createUser"}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1621868628252
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

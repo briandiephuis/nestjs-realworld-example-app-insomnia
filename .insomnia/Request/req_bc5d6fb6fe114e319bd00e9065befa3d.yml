@@ -1,0 +1,29 @@
+_id: req_bc5d6fb6fe114e319bd00e9065befa3d
+type: Request
+parentId: wrk_e7b09c405e0c4735b0dab47b228c930c
+modified: 1621871141583
+created: 1621868628202
+url: "{{ _.host }}{{ _.auth }}"
+name: Sign In
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |
+    {
+    	"email": "d.duck@example.com",
+    	"password": "daisy01"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1621868628202
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
