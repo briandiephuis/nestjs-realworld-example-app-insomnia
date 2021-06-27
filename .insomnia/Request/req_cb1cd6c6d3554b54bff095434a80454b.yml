@@ -1,7 +1,7 @@
 _id: req_cb1cd6c6d3554b54bff095434a80454b
 type: Request
 parentId: wrk_e7b09c405e0c4735b0dab47b228c930c
-modified: 1622143492229
+modified: 1624791343410
 created: 1621871718971
 url: "{{ _.host }}{{ _.gql }}"
 name: Me
@@ -11,7 +11,8 @@ body:
   mimeType: application/graphql
   text: '{"query":"query me {\n  me
     {\n    id\n    username\n    image\n    bio\n    articles
-    {\n      id\n      title\n      description\n    }\n  }\n}\n","operationName":"me"}'
+    {\n      id\n      title\n      description       \n    }\n    articlesWithoutDataloader
+    {\n      id\n      title\n      description       \n    }\n  }\n}\n","operationName":"me"}'
 parameters: []
 headers:
   - name: Content-Type

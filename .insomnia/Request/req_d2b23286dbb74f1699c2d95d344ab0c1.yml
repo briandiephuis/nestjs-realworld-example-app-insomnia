@@ -1,7 +1,7 @@
 _id: req_d2b23286dbb74f1699c2d95d344ab0c1
 type: Request
 parentId: wrk_e7b09c405e0c4735b0dab47b228c930c
-modified: 1622142023886
+modified: 1624791340890
 created: 1621879740452
 url: "{{ _.host }}{{ _.gql }}"
 name: Create Article
@@ -12,7 +12,7 @@ body:
   text: '{"query":"mutation createArticle($input: CreateArticleInput!)
     {\n  createArticle(input: $input)
     {\n    id\n    title\n    body\n    description\n  }\n}\n","variables":{"input":{"body":"Article
-    body","description":"Awesome article","title":"Awesome
+    body2","description":"Awesome article","title":"Awesome
     article","tagList":["article","awesome"]}},"operationName":"createArticle"}'
 parameters: []
 headers:
